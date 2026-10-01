@@ -1,0 +1,79 @@
+<mxfile host="Electron">
+  <diagram name="MCU Architecture" id="0">
+    <mxGraphModel dx="1273" dy="2057" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mcu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="620" width="680" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cpu" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" value="Cortex-M CPU&#xa;处理器核心" vertex="1">
+          <mxGeometry height="70" width="220" x="430" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="bus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=#666666;" value="System Bus&#xa;总线系统" vertex="1">
+          <mxGeometry height="60" width="280" x="400" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="flash" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="Flash&#xa;程序存储" vertex="1">
+          <mxGeometry height="70" width="150" x="300" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="sram" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;" value="SRAM&#xa;运行数据" vertex="1">
+          <mxGeometry height="70" width="150" x="640" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="peri" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;" value="Peripherals&#xa;外设" vertex="1">
+          <mxGeometry height="110" width="100" x="490" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="gpio" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="GPIO" vertex="1">
+          <mxGeometry height="50" width="90" x="240" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="timer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Timer" vertex="1">
+          <mxGeometry height="50" width="90" x="440" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="usart" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="USART" vertex="1">
+          <mxGeometry height="50" width="90" x="640" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="spi" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SPI" vertex="1">
+          <mxGeometry height="50" width="90" x="737" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="i2c" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="I2C" vertex="1">
+          <mxGeometry height="50" width="90" x="340" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="adc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ADC" vertex="1">
+          <mxGeometry height="50" width="90" x="540" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" edge="1" parent="1" source="cpu" target="bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" edge="1" parent="1" source="bus" target="flash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" edge="1" parent="1" source="bus" target="sram">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" edge="1" parent="1" source="bus" target="peri">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" edge="1" parent="1" source="peri" target="gpio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" edge="1" parent="1" source="peri" target="timer">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" edge="1" parent="1" source="peri" target="usart">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" edge="1" parent="1" source="peri" target="spi">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" edge="1" parent="1" source="peri" target="i2c">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="p6" edge="1" parent="1" source="peri" target="adc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n-gFG5YyJEz03hAPfv6S-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;h1&gt;MCU&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="510" y="-20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
